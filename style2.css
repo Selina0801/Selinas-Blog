@@ -1,0 +1,443 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  #background-color-header{
+    background: rgb(203,172,212);
+    background: linear-gradient(90deg, rgba(203,172,212,1) 0%, rgba(175,192,221,1) 57%, rgba(140,217,232,1) 93%);
+  }
+
+  .Gesammt{
+    background: rgb(250,228,252);
+    background: linear-gradient(90deg, rgba(250,228,252,1) 0%, rgba(197,237,245,1) 100%);
+  
+  }
+  
+  @media screen and (max-width:692px){
+
+    .topnav.responsive {position: relative;}}
+    
+    @media screen and (max-width: 600px){
+      .topnav a:not(:first-child) {display: none;}}
+
+      @media screen and (max-width:870px) {
+            
+        #Kopfzeile {
+            display: none;
+        }
+
+        ul{
+          float: left;
+        }
+       
+       }
+
+  #Kopfzeile{
+    margin-left: 35%;
+      height: 200px;
+      text-align: center;
+      text-decoration: underline;
+      vertical-align: middle;
+  }
+
+  #Kopfzeile h1{
+    padding-top: 100px;
+    float: left;
+    text-decoration: underline darkslateblue;
+  }
+
+  #Motivationsschreiben h6{
+    text-align: center;
+  }
+
+  #Kopfzeile img{
+    height: 200px;
+    width: auto;
+    float: left;
+  }
+
+  @media print{
+
+    .gallery{
+      display: none;
+    }
+
+    .verlinkung img{
+      display: none;
+    }
+    .col6{
+      display: none;
+    }
+  
+    .col7{
+      display: none;
+    }
+  
+    .col8{
+      display: none;
+    }
+    .col9{
+      display: none;
+    }
+  
+
+    .abstand{
+      display: none;
+    }
+
+    *{
+      filter: grayscale(100%)
+    }
+
+  }
+
+
+  .topnav{
+    position: sticky;
+    top: 0;
+  }
+
+  
+  ul {
+  
+    justify-content: center;
+    display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+      text-decoration: none;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    
+  
+    li a:hover:not(.active) {
+      background-color: lightpink;
+    }
+    
+    .active {
+      background-color: powderblue;
+    }
+  
+    .d-flex{
+      float: right;
+      height: 50px;
+    }
+  
+  .eingabe{
+    float: right;
+    height: 50px;
+    text-align: center;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+    background-color: rgb(219, 154, 224);
+  }
+  
+  .suchen{
+    background-color: rgb(220, 137, 223);
+    width: 60px;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+   
+  .suchen:hover{
+    background-color: palevioletred;
+  }
+
+    #Zwischenüberschrift{
+    text-decoration: underline;
+    height: auto;
+    width: auto;
+    vertical-align: middle;
+    text-align: center;
+    }
+  
+  
+ div.verlinkung img {
+  margin-left: 250px;
+  margin-top: 10px;
+  border: 1px black solid;
+  border-radius: 30px;
+}
+
+  #Überschrift1{
+    text-align: center;
+    vertical-align: middle;
+    background-color: plum;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+  
+  #Überschrift2{
+    text-align: center;
+    vertical-align: middle;
+    background-color: lightcoral;
+    margin-top: 10px;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+  
+  #Überschrift3{
+    text-align: center;
+    vertical-align: middle;
+    background-color: coral;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+  
+  #Überschrift4{
+    text-align: center;
+    vertical-align: middle;
+    background-color: sandybrown;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+  
+  #Überschrift5{
+    text-align: center;
+    vertical-align: middle;
+    background-color: khaki;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+
+  #Überschrift6{
+    text-align: center;
+    vertical-align: middle;
+    background-color: palegreen;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+
+  #Überschrift7{
+    text-align: center;
+    vertical-align: middle;
+    background-color: springgreen;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+
+  #Überschrift8{
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(41, 199, 165);
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+
+  #Überschrift9{
+    text-align: center;
+    vertical-align: middle;
+    background-color: darkturquoise;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+
+  #Überschrift10{
+    text-align: center;
+    vertical-align: middle;
+    background-color: deepskyblue;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+
+  #Überschrift11{
+    text-align: center;
+    vertical-align: middle;
+    background-color: dodgerblue;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+
+  #Überschrift12{
+    text-align: center;
+    vertical-align: middle;
+    background-color: cornflowerblue;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+
+  #Überschrift13{
+    text-align: center;
+    vertical-align: middle;
+    background-color: mediumpurple;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+
+  #Überschrift14{
+    text-align: center;
+    vertical-align: middle;
+    background-color: mediumorchid;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+
+  #Überschrift15{
+    text-align: center;
+    vertical-align: middle;
+    background-color: orchid;
+    outline: none;
+    border: 1px black solid; 
+    border-radius: 30px;
+  }
+
+
+  .col6{
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    width: 260px;
+   }
+  
+   div.col6 img{
+    border: 1px black solid;
+    border-radius: 30px;
+  }
+
+  div.col6 p{
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .col7{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 260px;
+   }
+  
+   div.col7 img{
+    border: 1px black solid;
+    border-radius: 30px;
+  }
+
+  div.col7 p{
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .col8{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 260px;
+   }
+  
+   div.col8 img{
+    border: 1px black solid;
+    border-radius: 30px;
+  }
+
+  div.col8 p{
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .col9{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 260px;
+   }
+  
+   div.col9 img{
+    border: 1px black solid;
+    border-radius: 30px;
+  }
+
+  div.col9 p{
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  #Hervorkommen:hover{
+    transform: scale(2.2);
+    transition: .5s;
+    cursor: crosshair;
+  }
+  
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .custom-footer{
+      height: auto;
+      width: auto;
+      margin-top: 20px;
+      border-top: 1px black solid;
+    }
+  
+    .left{
+      float: left;
+      text-align: center;
+      height: auto;
+      width: 50%;
+    }
+  
+    .left button{
+      height: 30px;
+      width: 120px;
+      outline: none;
+      background-color: transparent;
+      border: 1px black solid; 
+      border-radius: 30px;
+  
+    }
+  
+    .left button:hover{
+      background-color: lightblue;
+    }
+  
+    .left p{
+      float: right;
+      padding-right: 10px;
+    }
+  
+    .right{
+      float: left;
+      height: auto;
+      width: 50%;
+      text-align: center;
+    }
+  
+    .copyright{
+      margin-top: 100px;
+      background-color: powderblue;
+      text-align: center;
+    }

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reisepläne</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+
+      <link href="style3.css" rel="stylesheet">
+      <link rel="icon" href="logo_transparent.png">
+      <script> 
+
+        function showSubmitPopup() {
+          document.getElementById('handyPopup').style.display = 'block';
+          document.getElementById('handyPopup-background').style.display = 'block';
+        }
+
+        function dontshowPopup(){
+          document.getElementById('handyPopup').style.display = 'none';
+          document.getElementById('handyPopup-background').style.display = 'none';
+        }
+    
+        function thumbsup(){
+          document.getElementById("thumb-up").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down").style.color = 'Gray';
+        }
+
+        function thumbsdown(){
+          document.getElementById("thumb-down").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up").style.color = 'Gray';
+        }
+
+        function thumbsup1(){
+          document.getElementById("thumb-up1").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down1").style.color = 'Gray';
+        }
+
+        function thumbsdown1(){
+          document.getElementById("thumb-down1").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up1").style.color = 'Gray';
+        }
+
+        function thumbsup2(){
+          document.getElementById("thumb-up2").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down2").style.color = 'Gray';
+        }
+
+        function thumbsdown2(){
+          document.getElementById("thumb-down2").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up2").style.color = 'Gray';
+        }
+
+        function thumbsup3(){
+          document.getElementById("thumb-up3").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down3").style.color = 'Gray';
+        }
+
+        function thumbsdown3(){
+          document.getElementById("thumb-down3").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up3").style.color = 'Gray';
+        }
+
+        function thumbsup4(){
+          document.getElementById("thumb-up4").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down4").style.color = 'Gray';
+        }
+
+        function thumbsdown4(){
+          document.getElementById("thumb-down4").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up4").style.color = 'Gray';
+        }
+
+
+        function thumbsup5(){
+          document.getElementById("thumb-up5").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down5").style.color = 'Gray';
+        }
+
+        function thumbsdown5(){
+          document.getElementById("thumb-down5").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up5").style.color = 'Gray';
+        }
+
+        function thumbsup6(){
+          document.getElementById("thumb-up6").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down6").style.color = 'Gray';
+        }
+
+        function thumbsdown6(){
+          document.getElementById("thumb-down6").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up6").style.color = 'Gray';
+        }
+
+        function thumbsup7(){
+          document.getElementById("thumb-up7").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down7").style.color = 'Gray';
+        }
+
+        function thumbsdown7(){
+          document.getElementById("thumb-down7").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up7").style.color = 'Gray';
+        }
+
+        function thumbsup8(){
+          document.getElementById("thumb-up8").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down8").style.color = 'Gray';
+        }
+
+        function thumbsdown8(){
+          document.getElementById("thumb-down8").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up8").style.color = 'Gray';
+        }
+
+        function thumbsup9(){
+          document.getElementById("thumb-up9").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down9").style.color = 'Gray';
+        }
+
+        function thumbsdown9(){
+          document.getElementById("thumb-down9").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up9").style.color = 'Gray';
+        }
+
+        function thumbsup10(){
+          document.getElementById("thumb-up10").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down10").style.color = 'Gray';
+        }
+
+        function thumbsdown10(){
+          document.getElementById("thumb-down10").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up10").style.color = 'Gray';
+        }
+
+        function thumbsup11(){
+          document.getElementById("thumb-up11").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down11").style.color = 'Gray';
+        }
+
+        function thumbsdown11(){
+          document.getElementById("thumb-down11").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up11").style.color = 'Gray';
+        }
+
+        function thumbsup12(){
+          document.getElementById("thumb-up12").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down12").style.color = 'Gray';
+        }
+
+        function thumbsdown12(){
+          document.getElementById("thumb-down12").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up12").style.color = 'Gray';
+        }
+
+        function thumbsup13(){
+          document.getElementById("thumb-up13").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down13").style.color = 'Gray';
+        }
+
+        function thumbsdown13(){
+          document.getElementById("thumb-down13").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up13").style.color = 'Gray';
+        }
+
+        function thumbsup14(){
+          document.getElementById("thumb-up14").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-down14").style.color = 'Gray';
+        }
+
+        function thumbsdown14(){
+          document.getElementById("thumb-down14").style.color = 'rgb(40, 40, 184)';
+          document.getElementById("thumb-up14").style.color = 'Gray';
+        }
+       </script>
+
+    </head>
+      <body>
+      <!-- Header -->
+      <div id="background-color-header">
+        <header id="Kopfzeile">
+          <img src="logo_transparent.png">
+          <h1>Reisepläne</h1>
+      </header>
+      </div>
+
+    <!-- Navbar -->
+    <nav class="topnav">
+    <ul>
+      <li><a href="index.html">Mein Blog</a></li>
+      <li><a href="Sehenswürdigkeiten.html">Sehenswürdigkeiten</a></li>
+      <li><a class="active">Reisepläne</a></li>
+      
+      <form class="d-flex" role="suche">
+        <input class="eingabe" type="e" placeholder="Eingabe" aria-label="Suche">
+        <button class="suchen" type="submit">Suche</button>
+      </form>
+    </ul>
+  </nav>
+
+    <div class="Gesammt">
+
+    <div class="container">
+
+      <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow -->
+      <!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_rr -->
+    
+      <br>
+      <h2 id="Zwischenüberschrift">Checklisten</h2>
+
+
+      <p></p>
+      <h1 id="Überschrift1">Schweiz</h1>
+      <div class="row">
+
+        <div class="col1">
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Luzern">
+      <label for="vehicle1"> Bootstour in Luzern</label><br>
+                          <p>---->Ausstieg nähe Weggis</p>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Weggis">
+      <label for="vehicle2"> Gondelfahrt Weggis</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="See">
+      <label for="vehicle3">Picknick am See Weggis</label><br>
+          <input type="checkbox" id="vehicle4" name="vehicle4" value="Kapplerbrücke">
+      <label for="vehicle4">Über die Kapplerbrücke in Luzern</label><br>
+    </div>
+
+      <div class="col2">
+        <img  id="Hervorkommen" src="Schweiz/Weggis_Gondel.jpg" alt="Weggis" width="400" height="200">
+        <i onclick="thumbsup();" id="thumb-up" class="ri-thumb-up-fill"></i>
+        <i onclick="thumbsdown();" id="thumb-down" class="ri-thumb-down-fill"></i>
+        </div>
+      </div>
+
+        <br>
+        <h1 id="Überschrift2">Italien</h1>
+        <div class="row">
+
+       <div class="col1">
+         <input type="checkbox" id="vehicle1" name="vehicle1" value="Venedig">
+    <label for="vehicle1"> Bootstour nach Venedig</label><br>
+         <input type="checkbox" id="vehicle2" name="vehicle2" value="Essen">
+     <label for="vehicle2"> Venedig erkunden und Essen testen</label><br>
+         <input type="checkbox" id="vehicle3" name="vehicle3" value="Kolosseum">
+     <label for="vehicle3">Kolosseum in Rom besichtigen</label><br>
+     </div>
+    
+      <div class="col2">
+        <img id="Hervorkommen" src="Italien/kolosseum.jpg" alt="Weggis" width="400" height="200">
+        <i onclick="thumbsup1();" id="thumb-up1" class="ri-thumb-up-fill"></i>
+        <i onclick="thumbsdown1();" id="thumb-down1" class="ri-thumb-down-fill"></i>
+        </div>
+      </div>
+
+      <br>
+      <h1 id="Überschrift3">Niederlande</h1>
+      <div class="row">
+
+        <div class="col1">
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Keukenhof">
+      <label for="vehicle1">Tour durch Keukenhof</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Schildkröten">
+      <label for="vehicle2">Schildkrötenschwimmen in Grote Knip auf Curacao</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Kolosseum">
+      <label for="vehicle3">Land- und Windmühlenrundfahrt</label><br>
+          <input type="checkbox" id="vehicle4" name="vehicle4" value="Museum">
+      <label for="vehicle4">Van Gogh Museum besuchen</label><br>
+      <input type="checkbox" id="vehicle5" name="vehicle5" value="Haus">
+            <label for="vehicle5">Anne Frank-Haus</label><br>
+          </div>
+    
+          <div class="col2">
+            <img id="Hervorkommen" src="Niederlande/Schildkr_ten_am_Strand_Grote_Knip.jpg" alt="Schildkröte" width="400" height="200">
+            <i onclick="thumbsup2();" id="thumb-up2" class="ri-thumb-up-fill"></i>
+          <i onclick="thumbsdown2();" id="thumb-down2" class="ri-thumb-down-fill"></i>
+            </div>
+          </div>
+
+          <br>
+          <h1 id="Überschrift4">Frankreich</h1>
+  <div class="row">
+
+    <div class="col1">
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Eifelturm">
+     <label for="vehicle1">Den Eifelturm besichtigen</label><br>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Schildkröten">
+     <label for="vehicle2">Louvre Museum besuchen</label><br>
+       <input type="checkbox" id="vehicle3" name="vehicle3" value="Kolosseum">
+     <label for="vehicle3">In einem Kaffee Frühstücken</label><br>
+       <input type="checkbox" id="vehicle4" name="vehicle4" value="Schloss">
+     <label for="vehicle4">Schloss Versailles besichtigen</label><br>
+       <input type="checkbox" id="vehicle5" name="vehicle5" value="Mont">
+     <label for="vehicle5">Mont Saint-Michel besichtigen</label><br>
+       <input type="checkbox" id="vehicle6" name="vehicle6" value="Côte d’Azur">
+     <label for="vehicle6">Am Côte d’Azur entspannen</label><br>
+      </div>
+        
+     <div class="col2">
+       <img id="Hervorkommen" src="Frankreich/baie-mont-saint-michel-de-nuit-marc-lerouge.jpg" alt="mont saint" width="400" height="200">
+       <i onclick="thumbsup3();" id="thumb-up3" class="ri-thumb-up-fill"></i>
+        <i onclick="thumbsdown3();" id="thumb-down3" class="ri-thumb-down-fill"></i>
+     </div>
+   </div>
+
+  <br>
+  <h1 id="Überschrift5">Österreich</h1>
+    <div class="row">
+
+    <div class="col1">
+       <input type="checkbox" id="vehicle1" name="vehicle1" value="Hohensalzburg">
+     <label for="vehicle1">Die Festung Hohensalzburg besichtigen</label><br>
+       <input type="checkbox" id="vehicle2" name="vehicle2" value="Alpenzoo">
+     <label for="vehicle2">Alpenzoo Innsbruck durchlaufen</label><br>
+       <input type="checkbox" id="vehicle3" name="vehicle3" value="Tscheppaschlucht">
+     <label for="vehicle3">Die Tscheppaschlucht in Kärnten besuchen</label><br>
+       <input type="checkbox" id="vehicle4" name="vehicle4" value="Mozart">
+     <label for="vehicle4">Mozarts Geburtshaus besichtigen</label><br>
+       <input type="checkbox" id="vehicle5" name="vehicle5" value="Krimmler">
+     <label for="vehicle5">Die Krimmler Wasserfälle besichtigen</label><br>
+       <input type="checkbox" id="vehicle6" name="vehicle6" value="Schönbrunn">
+     <label for="vehicle6">Schloss Schönbrunn besuchen</label><br>
+    </div>
+       
+    <div class="col2">
+      <img id="Hervorkommen" src="IMG/Schloss Schönbrunn.jpeg" alt="Schloss" width="400" height="200">
+      <i onclick="thumbsup4();" id="thumb-up4" class="ri-thumb-up-fill"></i>
+        <i onclick="thumbsdown4();" id="thumb-down4" class="ri-thumb-down-fill"></i>
+    </div>
+  </div>
+
+         <br>
+         <h1 id="Überschrift6">Spanien</h1>
+         <div class="row">
+
+          <div class="col1">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Família">
+          <label for="vehicle1">Sagrada Família besichtigen</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Ordesa">
+          <label for="vehicle2">Nationalpark Ordesa y Monte Perdido</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Maspalomas">
+          <label for="vehicle3">Dünen von Maspalomas besuchen</label><br>
+            <input type="checkbox" id="vehicle4" name="vehicle4" value="Tramuntana">
+          <label for="vehicle4">Serra de Tramuntana besichtigen</label><br>
+          </div>
+
+          <div class="col2">
+            <img id="Hervorkommen" src="IMG/Nationalpark Ordesa y Monte Perdido.jfif" alt="Ordesa" width="400" height="200">
+            <i onclick="thumbsup5();" id="thumb-up5" class="ri-thumb-up-fill"></i>
+        <i onclick="thumbsdown5();" id="thumb-down5" class="ri-thumb-down-fill"></i>
+          </div>
+        </div>
+
+
+         <br>
+         <h1 id="Überschrift7">Amerika</h1>
+         <div class="row">
+
+          <div class="col1">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Freiheitsstatue">
+          <label for="vehicle1">Die Freiheitsstatue</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Gate">
+          <label for="vehicle2">Die Golden Gate Bridge</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Yellowstone">
+          <label for="vehicle3">Yellowstone Nationalpark</label><br>
+            <input type="checkbox" id="vehicle4" name="vehicle4" value="Zion">
+          <label for="vehicle4">Zion Nationalpark</label><br>
+            <input type="checkbox" id="vehicle5" name="vehicle5" value="Niagarafälle">
+          <label for="vehicle5">Niagarafälle</label><br>
+            <input type="checkbox" id="vehicle6" name="vehicle6" value="Times">
+          <label for="vehicle6">Den Times Square besuchen</label><br>
+          </div>
+
+          <div class="col2">
+            <img id="Hervorkommen" src="IMG/usa-niagara-faelle-2.png" alt="niagara" width="400" height="200">
+            <i onclick="thumbsup6();" id="thumb-up6" class="ri-thumb-up-fill"></i>
+        <i onclick="thumbsdown6();" id="thumb-down6" class="ri-thumb-down-fill"></i>
+          </div>
+        </div>
+
+         <br>
+         <h1 id="Überschrift8">Island</h1>
+         <div class="row">
+
+      <div class="col1">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Lagune">
+      <label for="vehicle1">In der Blaue Lagune Baden</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Geysir">
+      <label for="vehicle2">Golden Circle tour of Geysir mitmachen</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Skógafoss">
+      <label for="vehicle3">Wasserfälle Skógafoss & Seljalandsfoss besichtigen</label><br>
+        <input type="checkbox" id="vehicle4" name="vehicle4" value="Dettifoss">
+      <label for="vehicle4">Wasserfall Dettifoss besichtigen</label><br>
+        <input type="checkbox" id="vehicle5" name="vehicle5" value="Seenlandschaft">
+      <label for="vehicle5">Mývatn Seenlandschaft besuchen</label><br>
+        <input type="checkbox" id="vehicle6" name="vehicle6" value="Snæfellsnes">
+      <label for="vehicle6">Halbinsel Snæfellsnes besuchen</label><br>
+        <input type="checkbox" id="vehicle7" name="vehicle7" value="ökulsárlón">
+      <label for="vehicle7">ökulsárlón Gletscherlagune besichtigen</label><br>
+      </div>
+
+      <div class="col2">
+        <img id="Hervorkommen" src="IMG/xl_Island_Aurora Borealis_Nordlicht an Kirkjufell_is_tour_1058181722_ie.jpg" alt="Nordlicht" width="400" height="200">
+        <i onclick="thumbsup7();" id="thumb-up7" class="ri-thumb-up-fill"></i>
+    <i onclick="thumbsdown7();" id="thumb-down7" class="ri-thumb-down-fill"></i>
+      </div>
+    </div>
+
+
+        <br>
+        <h1 id="Überschrift9">Türkei</h1>
+        <div class="row">
+
+        <div class="col1">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Pamukkale">
+        <label for="vehicle1">Pamukkale besichtigen</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Pergamon">
+        <label for="vehicle2">Pergamon besuchen</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Butterfly">
+        <label for="vehicle3">Butterfly Valley besichtigen</label><br>
+          <input type="checkbox" id="vehicle4" name="vehicle4" value="Köprülü">
+        <label for="vehicle4">Köprülü-Kanyon-Nationalpark</label><br>
+        </div>
+
+        <div class="col2">
+          <img id="Hervorkommen" src="IMG/Butterfly_Valley.jpg" alt="Valley" width="400" height="200">
+          <i onclick="thumbsup8();" id="thumb-up8" class="ri-thumb-up-fill"></i>
+      <i onclick="thumbsdown8();" id="thumb-down8" class="ri-thumb-down-fill"></i>
+        </div>
+      </div>
+
+  
+        <br>
+        <h1 id="Überschrift10">Mongolei</h1>
+        <div class="row">
+
+        <div class="col1">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Hustai-National">
+          <label for="vehicle1">Hustai-National Park</label><br>
+              <input type="checkbox" id="vehicle2" name="vehicle2" value="National Park">
+          <label for="vehicle2">Gorkhi-Terelj National Park</label><br>
+              <input type="checkbox" id="vehicle3" name="vehicle3" value="Orkhon Valley">
+          <label for="vehicle3">Orkhon Valley</label><br>
+              <input type="checkbox" id="vehicle4" name="vehicle4" value="Kamelreiten">
+          <label for="vehicle4">Kamelreiten Wüste Gobi</label><br>
+        </div>
+
+        <div class="col2">
+          <img id="Hervorkommen" src="IMG/Orkhon Valley.jpg" alt="Orkhon" width="400" height="200">
+          <i onclick="thumbsup9();" id="thumb-up9" class="ri-thumb-up-fill"></i>
+      <i onclick="thumbsdown9();" id="thumb-down9" class="ri-thumb-down-fill"></i>
+            </div>
+        </div>
+
+
+      <br>
+      <h1 id="Überschrift11">Japan</h1>
+      <div class="row">
+
+      <div class="col1">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Kanazawa">
+        <label for="vehicle1">Die Stadt Kanazawa besuchen</label><br>
+                              <p>-->Den Garten Kenrokuen besuchen</p>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Himeji">
+        <label for="vehicle2">Die Burg Himeji besuchen</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Ritsurin">
+        <label for="vehicle3">Den Park Ritsurin besuchen</label><br>
+            <input type="checkbox" id="vehicle4" name="vehicle4" value="Mount Fuji">
+        <label for="vehicle4">Mount Fuji ansehen</label><br>
+              <input type="checkbox" id="vehicle5" name="vehicle5" value="Nabano no Sato">
+        <label for="vehicle5">Durch Nabano no Sato laufen</label><br>
+            <input type="checkbox" id="vehicle6" name="vehicle6" value="Kiyomizu-dera">
+        <label for="vehicle6">Den Kiyomizu-dera besichtigen</label><br>
+      </div>
+
+          <div class="col2">
+            <img id="Hervorkommen" src="IMG/beautiful-mount-fuji-free-photo-2210x1473.jpg" alt="Mount Fuji" width="400" height="200">
+            <i onclick="thumbsup10();" id="thumb-up10" class="ri-thumb-up-fill"></i>
+        <i onclick="thumbsdown10();" id="thumb-down10" class="ri-thumb-down-fill"></i>
+             </div>
+          </div>
+
+
+         <br>
+         <h1 id="Überschrift12">Phillippinen</h1>
+         <div class="row">
+
+          <div class="col1">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Puerto Princesa">
+            <label for="vehicle1">Nationalpark Puerto Princesa besuchen</label><br>
+                                <p>-->Unterirdischen Fluss durchfahren</p>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Reisterrassen">
+            <label for="vehicle2">Reisterrassen auf Luzon besichtigen</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Hügellandschaft">
+            <label for="vehicle3">Hügellandschaft von Bohol besuchen</label><br>
+                <input type="checkbox" id="vehicle4" name="vehicle4" value="Wasserfälle">
+            <label for="vehicle4">Bei den Wasserfälle auf Siquijor Schwimmen</label><br>
+                 <input type="checkbox" id="vehicle5" name="vehicle5" value="El Nido">
+            <label for="vehicle5">Am Strand El Nido entspannen</label><br>
+          </div>
+
+          <div class="col2">
+            <img id="Hervorkommen" src="IMG/Unterirdischer Fluss im Nationalpark in Puerto Princesa.jpg" alt="Unterirdischer Fluss" width="400" height="200">
+            <i onclick="thumbsup11();" id="thumb-up11" class="ri-thumb-up-fill"></i>
+        <i onclick="thumbsdown11();" id="thumb-down11" class="ri-thumb-down-fill"></i>
+             </div>
+          </div>
+
+
+      <br>
+      <h1 id="Überschrift13">Mexiko</h1>
+      <div class="row">
+
+      <div class="col1">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Isla Cozumel">
+        <label for="vehicle1">Isla Cozumel besuchen</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Isla Mujeres">
+        <label for="vehicle2">Isla Mujeres besuchen</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Chiapas">
+        <label for="vehicle3">Chiapas Natur besichtigen</label><br>
+            <input type="checkbox" id="vehicle4" name="vehicle4" value="Pazifikküste">
+        <label for="vehicle4">Die mexikanischen Pazifikküste besichtigen</label><br>
+      </div>
+      
+      <div class="col2">
+        <img id="Hervorkommen" src="IMG/Chiapas Natur Mexicos.jpg" alt="Chiapas" width="400" height="200">
+        <i onclick="thumbsup12();" id="thumb-up12" class="ri-thumb-up-fill"></i>
+        <i onclick="thumbsdown12();" id="thumb-down12" class="ri-thumb-down-fill"></i>
+          </div>
+      </div>
+
+
+      <br>
+      <h1 id="Überschrift14">Brasilien</h1>
+      <div class="row">
+
+      <div class="col1">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Janeiro">
+        <label for="vehicle1">Rio de Janeiro besuchen</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Wasserfälle">
+        <label for="vehicle2">Wasserfälle von Iguazù</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Chapada">
+        <label for="vehicle3">Chapada Diamantina</label><br>
+            <input type="checkbox" id="vehicle4" name="vehicle4" value="Fernando">
+        <label for="vehicle4">Fernando de Noronha</label><br>
+      </div>
+
+        <div class="col2">
+          <img id="Hervorkommen" src="IMG/Wasserflle-von-Iguau-Brasilien-167714.jpeg" alt="Wasserfälle" width="400" height="200">
+          <i onclick="thumbsup13();" id="thumb-up13" class="ri-thumb-up-fill"></i>
+          <i onclick="thumbsdown13();" id="thumb-down13" class="ri-thumb-down-fill"></i>
+            </div>
+        </div>
+
+  <br>
+  <h1 id="Überschrift15">Madagaskar</h1>
+  <div class="row">
+
+  <div class="col1">
+    <p>Haben sie diese Orte schon in Madagaskar gesehen?</p>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Gebirgslandschaft">
+    <label for="vehicle1"> Isalo-Nationalpark - Gebirgslandschaft</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Baobab">
+    <label for="vehicle2">Baobab Allee im Westen</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Ranomafana">
+    <label for="vehicle3">Ranomafana Nationalpark</label><br>
+        <input type="checkbox" id="vehicle4" name="vehicle4" value="Zahamena">
+    <label for="vehicle4">Zahamena Nationalpark</label><br>
+          <input type="checkbox" id="vehicle5" name="vehicle5" value="Tsingy">
+    <label for="vehicle5">Nationalpark Tsingy de Bemaraha</label><br>
+        <input type="checkbox" id="vehicle6" name="vehicle6" value="Sainte Marie">
+    <label for="vehicle6">Ile Sainte Marie</label><br>
+        </div>
+  
+      <div class="col2">
+        <img id="Hervorkommen" src="IMG/baobab-allee-sonnenuntergang-1000.jpg" alt="Baobab" width="400" height="200">
+        <i onclick="thumbsup14();" id="thumb-up14" class="ri-thumb-up-fill"></i>
+        <i onclick="thumbsdown14();" id="thumb-down14" class="ri-thumb-down-fill"></i>
+          </div>
+            </div>
+
+
+          <div class="Ende">
+        <button id="Endbutton" onclick="showSubmitPopup()">Klicke hier um deine Checkliste abzugeben</button>
+        <p id="Endsatz"> Haben Sie diese Orte schon besichtigt? Nutzen Sie die Reisepläne um die Checkliste zu vollenden! 🛫</p>
+        </div>
+
+
+        <div id="handyPopup-background"></div>
+        <!--HANDY POPUP-->
+        <div id="handyPopup"> 
+          <img id="handyPopupIMG" src="logo_transparent.png">
+          <p>Deine Checkliste und die Bewertung wurde erfolgreich abgegeben!</p>
+          <button onclick="dontshowPopup();">Zurück zur Startseite</button>
+        </div>
+
+
+
+          
+    <!--Fußzeile-->
+
+     <footer class="custom-footer">
+
+       <div class="left"> 
+          <h4>Über Mich</h4>
+          <a href="https://www.instagram.com/selina_08.01?utm_source=qr&igsh=djhib3R3djh3OW55">
+            <button>
+             <svg xmlns="http://www.w3.org/2000/svg" color="mediumpurple" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+             </svg> 
+             <p>Instagram</p>
+            </button>
+           </a>
+
+           <a href="https://www.snapchat.com/add/selina.snapt?share_id=WY2lwUE8j6o&locale=de-DE">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" color="gold" width="16" height="16" fill="currentColor" class="bi bi-snapchat" viewBox="0 0 16 16">
+                <path d="M15.943 11.526c-.111-.303-.323-.465-.564-.599a1 1 0 0 0-.123-.064l-.219-.111c-.752-.399-1.339-.902-1.746-1.498a3.4 3.4 0 0 1-.3-.531c-.034-.1-.032-.156-.008-.207a.3.3 0 0 1 .097-.1c.129-.086.262-.173.352-.231.162-.104.289-.187.371-.245.309-.216.525-.446.66-.702a1.4 1.4 0 0 0 .069-1.16c-.205-.538-.713-.872-1.329-.872a1.8 1.8 0 0 0-.487.065c.006-.368-.002-.757-.035-1.139-.116-1.344-.587-2.048-1.077-2.61a4.3 4.3 0 0 0-1.095-.881C9.764.216 8.92 0 7.999 0s-1.76.216-2.505.641c-.412.232-.782.53-1.097.883-.49.562-.96 1.267-1.077 2.61-.033.382-.04.772-.036 1.138a1.8 1.8 0 0 0-.487-.065c-.615 0-1.124.335-1.328.873a1.4 1.4 0 0 0 .067 1.161c.136.256.352.486.66.701.082.058.21.14.371.246l.339.221a.4.4 0 0 1 .109.11c.026.053.027.11-.012.217a3.4 3.4 0 0 1-.295.52c-.398.583-.968 1.077-1.696 1.472-.385.204-.786.34-.955.8-.128.348-.044.743.28 1.075q.18.189.409.31a4.4 4.4 0 0 0 1 .4.7.7 0 0 1 .202.09c.118.104.102.26.259.488q.12.178.296.3c.33.229.701.243 1.095.258.355.014.758.03 1.217.18.19.064.389.186.618.328.55.338 1.305.802 2.566.802 1.262 0 2.02-.466 2.576-.806.227-.14.424-.26.609-.321.46-.152.863-.168 1.218-.181.393-.015.764-.03 1.095-.258a1.14 1.14 0 0 0 .336-.368c.114-.192.11-.327.217-.42a.6.6 0 0 1 .19-.087 4.5 4.5 0 0 0 1.014-.404c.16-.087.306-.2.429-.336l.004-.005c.304-.325.38-.709.256-1.047m-1.121.602c-.684.378-1.139.337-1.493.565-.3.193-.122.61-.34.76-.269.186-1.061-.012-2.085.326-.845.279-1.384 1.082-2.903 1.082s-2.045-.801-2.904-1.084c-1.022-.338-1.816-.14-2.084-.325-.218-.15-.041-.568-.341-.761-.354-.228-.809-.187-1.492-.563-.436-.24-.189-.39-.044-.46 2.478-1.199 2.873-3.05 2.89-3.188.022-.166.045-.297-.138-.466-.177-.164-.962-.65-1.18-.802-.36-.252-.52-.503-.402-.812.082-.214.281-.295.49-.295a1 1 0 0 1 .197.022c.396.086.78.285 1.002.338q.04.01.082.011c.118 0 .16-.06.152-.195-.026-.433-.087-1.277-.019-2.066.094-1.084.444-1.622.859-2.097.2-.229 1.137-1.22 2.93-1.22 1.792 0 2.732.987 2.931 1.215.416.475.766 1.013.859 2.098.068.788.009 1.632-.019 2.065-.01.142.034.195.152.195a.4.4 0 0 0 .082-.01c.222-.054.607-.253 1.002-.338a1 1 0 0 1 .197-.023c.21 0 .409.082.49.295.117.309-.04.56-.401.812-.218.152-1.003.638-1.18.802-.184.169-.16.3-.139.466.018.14.413 1.991 2.89 3.189.147.073.394.222-.041.464"/>
+              </svg>
+              <p>Snapchat</p>
+            </button>
+          </a>
+              
+           </div>
+              
+        <div class="right">
+         <h4>Sonstiges</h4>
+         <p>Das Buch "1000 Places To See Before You Die" kann eine Inspiration für dich sein! 
+          <a href="https://www.amazon.de/-/en/Patricia-Schultz/dp/3848010003">Klicke hier...</a></p>
+          </div>
+              
+      </footer>
+              
+       <div class="copyright">
+         <p>Copyright
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+          <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512"/>
+        </svg>
+          2024 Selina Vogt. Alle Rechte vorbehalten.</p>
+       </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
